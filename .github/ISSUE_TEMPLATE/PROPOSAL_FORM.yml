@@ -1,0 +1,46 @@
+name: Talk Proposal
+description: Propose a talk
+title: "[Proposal]: "
+labels: ["proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this talk proposal!
+  - type: input
+    id: title
+    attributes:
+      label: Talk title
+      description: The title of your talk/dojo
+    validations:
+      required: false
+  - type: textarea
+    id: abstract
+    attributes:
+      label: The Abstract
+      description: What is your talk about?
+    validations:
+      required: true
+  - type: input
+    id: duration
+    attributes:
+      label: The duration of your talk
+    validations:
+      required: false
+  - type: textarea
+    id: speaker-bio
+    attributes:
+      label: Tell us more about yourself as a speaker
+      description: Who are you?
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: format
+      description: What format does the talk have?
+      options:
+        - Regular talk
+        - Interactive format like dojo or otherwise
+    validations:
+      required: true
